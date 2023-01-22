@@ -1,0 +1,108 @@
+.nav {
+
+	padding: 30px 30px 0 0;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	@include flex(flex-end, flex-start);
+
+	// ---------- icon ----------
+	&__icon {
+		display: block;
+		width: 35px;
+		height: 23px;
+
+		position: relative;
+		z-index: 5;
+		cursor: pointer;
+	}
+
+	&__icon span {
+		background-color: $bgNavIcon;
+
+		width: 100%;
+		height: 4px;
+
+		position: absolute;
+		top: calc(50% - 2px);
+		left: 0;
+		transition: all .3s;
+	}
+
+	&__icon span:first-child {top: 0}
+	&__icon span:last-child {top: auto; bottom: 0}
+
+	&__icon.active span {transform: scale(0)}
+
+	&__icon.active span:first-child {
+		transform: rotate(-45deg);
+		top: calc(50% - 2px);
+	}
+	&__icon.active span:last-child {
+		transform: rotate(45deg);
+		bottom: calc(50% - 2px);
+	}
+
+	// ---------- /icon ----------
+
+	// ---------- body ----------
+
+	&__body {
+		background-color: $bgNav;
+
+		height: 100vh;
+		width: 100%;
+
+		display: flex;
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		overflow: auto;
+		transition: all .3s;
+	}
+
+	&__body.active {transform: translateY(100%)}
+
+	// ---------- /body ----------
+
+	// ---------- list ----------
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		margin: auto;
+		padding: 30px;
+		list-style-type: none;
+	}
+
+	// ---------- /list ----------
+
+	// ---------- link ----------
+
+	&__link {
+		color: $clNavLink;
+		@include font($font-nav-size, $font-nav-height);
+		text-decoration: none;
+		transition: all 0.2s;
+		position: relative;
+	}
+
+	&__link:hover {color: $clNavLinkHover}
+	&__link:active {top: 3px}
+
+	// ---------- /link ----------
+}
+
+@media (max-width: $mediaMoibil) {
+
+	.nav {
+		&__link {
+			font-size: 2.5em !important;
+			line-height: 2em !important;
+		}
+	}
+}

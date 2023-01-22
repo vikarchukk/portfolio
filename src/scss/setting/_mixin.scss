@@ -1,0 +1,10 @@
+@mixin font($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin flex($j:flex-start, $a:flex-start) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+}

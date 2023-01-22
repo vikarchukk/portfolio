@@ -1,0 +1,76 @@
+.form {
+	@include flex();
+	flex-direction: column;
+	grid-row-gap: 20px;
+
+	input, textarea {
+		width: 480px;
+		padding: 13px 13px;
+
+		font-family: $font-family-one;
+		font-weight: $font-weight-one;
+		@include font($font-form-size, $font-form-height);
+		color: $clFormInput;
+		background-color: $bgFormInput;
+		border: 5px solid $clFormInput;
+	}
+
+	textarea {
+		max-width: 480px;
+		min-width: 480px;
+
+		min-height: 80px;
+    	max-height: 120px;
+
+    	outline: none;
+	}
+
+	&__btn {
+		margin-top: 5px;
+	}
+
+	#my-form-status {
+		margin-top: 10px;
+		height: 30px;
+		border-bottom: 5px solid $clFormInput;
+	}
+}
+
+::placeholder {
+	color: $clFormPlaceholder;
+}
+
+@media (max-width: $mediaTablet) { 
+
+	.form {
+
+		@include flex(flex-start, center);
+
+		input, textarea {
+			max-width: 600px;
+			width: 100%;
+		}
+
+		textarea {
+			min-height: 180px;
+    		max-height: 180px;
+		}
+	}
+}
+
+@media (max-width: $mediaMoibil) {
+	
+	.form {
+
+		@include flex(flex-start, center);
+
+		input, textarea {
+			max-width: 100%;
+			width: 100%;
+		}
+
+		textarea {
+    		min-width: 0px;
+		}
+	}
+}
