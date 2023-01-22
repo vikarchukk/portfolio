@@ -1,3 +1,11 @@
+// ---------- aos ----------
+
+AOS.init({
+  once: true,
+});
+
+// ---------- /aos ----------
+
 // ---------- mapbox ----------
 
 // mapbox://styles/mapbox/navigation-day-v1

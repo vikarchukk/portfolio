@@ -4,6 +4,8 @@ body {
 	color: $clMain;
 	background-color: $bgMain;
 
+	overflow-x: hidden;
+
 	&.lock {overflow: hidden}
 }
 
