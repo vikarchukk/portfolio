@@ -19,8 +19,8 @@
 		max-width: 480px;
 		min-width: 480px;
 
-		min-height: 80px;
-    	max-height: 120px;
+		min-height: 100px;
+    	max-height: 170px;
 
     	outline: none;
 	}
@@ -71,6 +71,16 @@
 
 		textarea {
     		min-width: 0px;
+
 		}
+	}
+}
+
+@media (max-width: 345px) {
+
+	#my-form-status {
+		height: 100%;
+		margin-bottom: 20px !important;
+		border: 0 !important;
 	}
 }

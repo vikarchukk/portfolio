@@ -1,5 +1,5 @@
 .footer {
-	min-height: 810px;
+	min-height: 750px;
 
 	padding-top: 50px;
 	padding-bottom: 10px;
@@ -11,12 +11,7 @@
 	&__content { }
 
 	&__title {
-		margin-bottom: 30px;
-	}
-
-	&__text {
-		max-width: 480px;
-		margin-bottom: 50px;
+		margin-bottom: 35px;
 	}
 
 	#map {
@@ -38,16 +33,12 @@
 
 	.footer {
 
-		padding-bottom: 30px;
+		padding-bottom: 10px;
+		min-height: 750px;
 		text-align: center;
 
 		&__wrap {
 			@include flex(center, flex-start);
-		}
-
-		&__text {
-			max-width: 600px;
-			margin-bottom: 50px;
 		}
 
 		#map {
@@ -61,7 +52,8 @@
 	.footer {
 
 		&__title {
-			@include font(40px, 54px);
+			@include font(45px, 54px);
+			width: 100%;
 		}
 	}
 }

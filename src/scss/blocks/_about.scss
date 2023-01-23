@@ -1,6 +1,6 @@
 .about {
 
-	min-height: 750px;
+	min-height: 735px;
 
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -26,7 +26,9 @@
 
 	&__soc {
 		@include flex();
+		flex-wrap: wrap;
 		grid-column-gap: 30px;
+		grid-row-gap: 10px;
 	}
 
 	&__link {
