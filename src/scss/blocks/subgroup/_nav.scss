@@ -97,9 +97,11 @@
 	// ---------- /link ----------
 }
 
-@media (max-width: $mediaMoibil) {
+@media (max-width: $mediaTablet) {
 
 	.nav {
+
+		display: none;
 		
 		&__link {
 			font-size: 2.5em !important;
