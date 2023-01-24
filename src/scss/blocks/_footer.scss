@@ -22,8 +22,6 @@
 
 		margin-top: 25px;
 		padding: 50px;
-
-		border: 5px solid $clFormInput;
 	}
 
 	#map.active {opacity: 0;display: none;}
@@ -34,7 +32,7 @@
 	.footer {
 
 		padding-bottom: 10px;
-		min-height: 750px;
+		min-height: 745px;
 		text-align: center;
 
 		&__wrap {
@@ -50,6 +48,8 @@
 @media (max-width: $mediaMoibil) {
 	
 	.footer {
+
+		min-height: 725px;
 
 		&__title {
 			@include font(45px, 54px);

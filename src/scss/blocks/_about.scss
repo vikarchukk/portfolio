@@ -36,12 +36,15 @@
 		border-bottom: 2px solid $clSocLink;
 	}
 
-	&__link:hover {color:$clSocLinkHover}
+	&__link:hover {
+		color: $clSocLinkHover;
+		border-bottom: 2px solid $clSocLinkHover;
+	}
 
 	&__lang {
 		width: 100%;
 
-		margin-top: 90px;
+		margin-top: 70px;
 
 		@include flex();
 		flex-wrap: wrap;

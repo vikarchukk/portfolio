@@ -14,7 +14,7 @@
 	&__project {
 		max-width: 1560px;
 		margin: 0 auto;
-		margin-top: 80px;
+		margin-top: 50px;
 		@include flex(center, center);
 		flex-wrap: wrap;
 	}
@@ -27,9 +27,15 @@
 
 		@include flex(center, center);
 		@include font(48px, 62px);
-		color: $clMain;
-		border: 5px solid $clMain;
+		color: #f1f1f1;
+		border: 1px solid $clMain;
 		margin: 5px;
+
+		h1 {
+			height: 100%;
+			display: flex;
+			@include flex(center, center);
+		}
 
 		@media (max-width: 1242px) {
 			&:not(:nth-child(-n + 6)) {
@@ -66,7 +72,7 @@
 
 	.portfolio {
 
-		padding-bottom: 100px;
+		padding-bottom: 60px;
 		text-align: center;
 	}
 }

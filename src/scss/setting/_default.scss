@@ -46,12 +46,15 @@ $mediaMoibil: 660px;
 	font-family: $font-family-one;
 	font-weight: $font-weight-one;
 	color: $clBtn;
-	border: 5px solid $clBtn;
+	border: 2px solid $clBtn;
 	padding: 10px 20px;
 	text-transform: uppercase;
 }
 .btn:hover {position: relative;top: -2px}
 .btn:active {position: relative;top: 0}
+
+.scale {transition: 1s;}
+.scale:hover {transform: scale(1.2);}
 
 .mapboxgl-ctrl-logo {display: none !important;}
 .mapboxgl-ctrl.mapboxgl-ctrl-attrib.mapboxgl-compact {display: none !important;}

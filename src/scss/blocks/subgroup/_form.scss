@@ -12,14 +12,18 @@
 		@include font($font-form-size, $font-form-height);
 		color: $clFormInput;
 		background-color: $bgFormInput;
-		border: 5px solid $clFormInput;
+
+		&:focus {
+			outline: 2px solid $clOutLine;
+			outline-offset: 3px;
+		}
 	}
 
 	textarea {
 		max-width: 480px;
 		min-width: 480px;
 
-		min-height: 100px;
+		min-height: 140px;
     	max-height: 170px;
 
     	outline: none;
@@ -27,6 +31,8 @@
 
 	&__btn {
 		margin-top: 5px;
+		color: $clBtnSend;
+		border: 2px solid $clBtnSend;
 	}
 
 	#my-form-status {
