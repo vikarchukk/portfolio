@@ -24,6 +24,7 @@
 		height: 320px;
 
 		cursor: pointer;
+		overflow: hidden;
 
 		@include flex(center, center);
 		@include font(48px, 62px);
@@ -36,6 +37,8 @@
 			display: flex;
 			@include flex(center, center);
 		}
+
+		img { object-fit: cover; }
 
 		@media (max-width: 1242px) {
 			&:not(:nth-child(-n + 6)) {

@@ -56,5 +56,10 @@ $mediaMoibil: 660px;
 .scale {transition: 1s;}
 .scale:hover {transform: scale(1.2);}
 
-.mapboxgl-ctrl-logo {display: none !important;}
+// .mapboxgl-ctrl-logo {display: none !important;}
 .mapboxgl-ctrl.mapboxgl-ctrl-attrib.mapboxgl-compact {display: none !important;}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background-color: $bgMain; }
+::-webkit-scrollbar-thumb { background-color: $clMain; }
+::-webkit-scrollbar-thumb:hover { background-color: $clNavLinkHover; }
