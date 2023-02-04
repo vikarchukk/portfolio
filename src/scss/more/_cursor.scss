@@ -1,0 +1,36 @@
+@media (min-width: 900px) {
+	
+* {cursor: none;}
+
+button:hover {cursor:none;}
+
+#cursor, #cursor-aura {
+	position: fixed; top: 0; left: 0;
+	transform: translate(-50%, -50%);
+	pointer-events: none; user-select: none;
+	border-radius: 50%;
+	z-index: 10000;
+}
+
+#cursor {
+	width: 46px; height: 46px;
+	border: 1px solid rgb(255, 255, 255, 0.2);
+	background-color: rgb(255, 255, 255, 0.03);
+	transition: .125s;
+
+	&.active-cursor {
+		transition: .05s;
+		transform: translate(-50%, -50%) scale(1.3);
+		border: 1.2px solid rgb(255, 255, 255, 0.33)
+	}
+}
+
+#cursor-aura {
+	width: 8px; height: 8px;
+	background-color: rgb(255, 255, 255, 0.5);
+	transition: .025s;
+
+	&.active-cursor { opacity: 0; }
+}
+
+}

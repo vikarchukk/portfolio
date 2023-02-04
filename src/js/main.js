@@ -1,3 +1,74 @@
+// ---------- cursor ----------
+
+const cursor = document.querySelector('#cursor');
+const cursorAura = document.querySelector('#cursor-aura');
+const bodyTwo = document.querySelector('body');
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.cssText = cursorAura.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+});
+
+const a = document.querySelectorAll('a');
+const btn = document.querySelectorAll('button');
+const prItem = document.querySelectorAll('.portfolio__item');
+const input = document.querySelectorAll('input');
+const textarea = document.querySelector('textarea');
+
+for (let i = 0; i < a.length; i++) {
+  a[i].addEventListener('mouseover', () => {
+    cursor.classList.add('active-cursor')
+    cursorAura.classList.add('active-cursor')
+  })
+  a[i].addEventListener('mouseout', () => {
+    cursor.classList.remove('active-cursor')
+    cursorAura.classList.remove('active-cursor')
+  })
+};
+
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener('mouseover', () => {
+    cursor.classList.add('active-cursor')
+    cursorAura.classList.add('active-cursor')
+  })
+  btn[i].addEventListener('mouseout', () => {
+    cursor.classList.remove('active-cursor')
+    cursorAura.classList.remove('active-cursor')
+  })
+};
+
+for (let i = 0; i < prItem.length; i++) {
+  prItem[i].addEventListener('mouseover', () => {
+    cursor.classList.add('active-cursor')
+    cursorAura.classList.add('active-cursor')
+  })
+  prItem[i].addEventListener('mouseout', () => {
+    cursor.classList.remove('active-cursor')
+    cursorAura.classList.remove('active-cursor')
+  })
+};
+
+for (let i = 0; i < input.length; i++) {
+  input[i].addEventListener('mouseover', () => {
+    cursor.classList.add('active-cursor')
+    cursorAura.classList.add('active-cursor')
+  })
+  input[i].addEventListener('mouseout', () => {
+    cursor.classList.remove('active-cursor')
+    cursorAura.classList.remove('active-cursor')
+  })
+};
+
+textarea.addEventListener('mouseover', () => {
+  cursor.classList.add('active-cursor')
+  cursorAura.classList.add('active-cursor')
+})
+textarea.addEventListener('mouseout', () => {
+  cursor.classList.remove('active-cursor')
+  cursorAura.classList.remove('active-cursor')
+})
+
+// ---------- /cursor ----------
+
 // ---------- aos ----------
 
 AOS.init({
@@ -82,6 +153,15 @@ if (nav && navBtn) {
   });
 };
 
+navBtn.addEventListener('mouseover', () => {
+  cursor.classList.add('active-cursor')
+  cursorAura.classList.add('active-cursor')
+})
+navBtn.addEventListener('mouseout', () => {
+  cursor.classList.remove('active-cursor')
+  cursorAura.classList.remove('active-cursor')
+})
+
 // ---------- /nav ----------
 
 // ---------- scroll ----------
@@ -105,14 +185,14 @@ anchors.forEach(anchor => {
 
 // ---------- show more ----------
 
-const btnPortfolio = document.querySelector('.portfolio__btn');
-const cardsPortfolio = document.querySelectorAll('.portfolio__item');
+// const btnPortfolio = document.querySelector('.portfolio__btn');
+// const cardsPortfolio = document.querySelectorAll('.portfolio__item');
 
-btnPortfolio.addEventListener('click', function() {
-  for(let card of cardsPortfolio) {
-    card.style.display = 'flex'
-  }
-  btnPortfolio.style.display = 'none';
-});
+// btnPortfolio.addEventListener('click', function() {
+//   for(let card of cardsPortfolio) {
+//     card.style.display = 'flex'
+//   }
+//   btnPortfolio.style.display = 'none';
+// });
 
 // ---------- /show more ----------
