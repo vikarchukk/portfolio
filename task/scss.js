@@ -21,7 +21,7 @@ const scss = function() {
 		}))
 	}))
 	.pipe(sass())
-	.pipe(webpCss())
+	// .pipe(webpCss())
 	.pipe(autoprefixer())
 	.pipe(shorthand())
 	.pipe(groupCssMediaQueries())

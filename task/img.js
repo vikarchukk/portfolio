@@ -18,7 +18,7 @@ const img = function() {
 		}))
 	}))
 	.pipe(newer(path.img.dest))
-	.pipe(webp())
+	// .pipe(webp())
 	.pipe(dest(path.img.dest))
 	.pipe(src(path.img.src))
 	.pipe(newer(path.img.dest))

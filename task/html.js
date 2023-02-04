@@ -18,7 +18,7 @@ const html = function() {
 		}))
 	}))
 	.pipe(fileInclude())
-	.pipe(webpHtml())
+	// .pipe(webpHtml()
 	.pipe(size({title:"html to"}))
 	.pipe(htmlmin(app.htmlmin))
 	.pipe(size({title:"html after"}))

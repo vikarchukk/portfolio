@@ -53,8 +53,10 @@ $mediaMoibil: 660px;
 .btn:hover {position: relative;top: -2px}
 .btn:active {position: relative;top: 0}
 
-.scale {transition: 1s;}
-.scale:hover {transform: scale(1.2);}
+@media (min-width: $mediaMoibil) {
+	.scale {transition: 1s;}
+	.scale:hover {transform: scale(1.08);}
+}
 
 // .mapboxgl-ctrl-logo {display: none !important;}
 .mapboxgl-ctrl.mapboxgl-ctrl-attrib.mapboxgl-compact {display: none !important;}
