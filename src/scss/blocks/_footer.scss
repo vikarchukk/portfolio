@@ -27,6 +27,8 @@
 	#map.active {opacity: 0;display: none;}
 }
 
+.mapboxgl-canvas {cursor:none;}
+
 @media (max-width: $mediaTablet) {
 
 	.footer {
