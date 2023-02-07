@@ -28,7 +28,6 @@
 		@include flex(center, center);
 		@include font(48px, 62px);
 		color: #f1f1f1;
-		border: 1px solid $clMain;
 		margin: 5px;
 
 		h1 {
@@ -40,12 +39,7 @@
 		a {
 			width: 100%; height: 100%;
 			display: block;
-			background-image: url('../img/p01.png');
-			background-repeat: no-repeat; background-size: contain;
-			background-position: center 12px; background-color: #fff;
 		}
-
-		img { object-fit: contain; }
 
 		@media (max-width: 1242px) {
 			&:not(:nth-child(-n + 6)) {
@@ -64,6 +58,18 @@
 				display: none;
 			}
 		}
+	}
+
+	&__project &__item:nth-child(1) a {
+		background-image: url('../img/p01.png');
+		background-repeat: no-repeat; background-size: contain;
+		background-position: center 12px; background-color: #ffffff;
+	}
+
+	&__project &__item:nth-child(2) a {
+		background-image: url('../img/p02.png');
+		background-repeat: no-repeat; background-size: contain;
+		background-position: center center;
 	}
 
 	&__wrap__btn {
