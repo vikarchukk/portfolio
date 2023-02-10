@@ -72,6 +72,12 @@
 		background-position: center center;
 	}
 
+	&__project &__item:nth-child(3) a {
+		background-image: url('../img/p03.png');
+		background-repeat: no-repeat; background-size: contain;
+		background-position: center center;
+	}
+
 	&__wrap__btn {
 
 		@include flex(center, center);
