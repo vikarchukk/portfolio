@@ -3,7 +3,7 @@ const {watch, series, parallel} = require("gulp");
 const browserSync = require("browser-sync").create();
 const path = require("./config/path.js");
 
-// task
+// task +
 const clear = require('./task/clear.js');
 const html = require('./task/html.js');
 const scss = require('./task/scss.js');
