@@ -1,0 +1,16 @@
+.typing {
+  @apply text-[30px] max560:text-[22px];
+  width: 21ch;
+  overflow: hidden; white-space: nowrap;
+  border-right: 4px solid white;
+
+  animation: printed-text 5s steps(21), flashin-border .75s step-start infinite;
+}
+
+@keyframes flashin-border {
+  0% { border-color: white; }
+  50% { border-color: transparent; }
+  100% { border-color: white; }
+}
+
+@keyframes printed-text { from { width: 0%; } }

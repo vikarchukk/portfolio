@@ -1,0 +1,67 @@
+body {
+	font-family: $font-family-one;
+	font-weight: $font-weight-one;
+	color: $clMain;
+	background-color: $bgMain;
+
+	overflow-x: hidden;
+
+	&.lock {overflow: hidden}
+}
+
+$mediaTablet: 1200px;
+$mediaMoibil: 660px;
+
+.box {
+	max-width: 1280px;
+	width: 100%;
+	padding: 0 30px;
+	margin: 0 auto;
+
+	@media (max-width: $mediaMoibil) {
+		padding: 0 15px;
+	}
+}
+
+*::selection {
+	background-color: $clMain;
+	color: $bgMain;
+}
+
+.title {
+	@include font($font-title-size, $font-title-height);
+	color: $clTitle;
+	@media (max-width: $mediaMoibil) {
+		@include font(43px, 57px);
+	}
+}
+
+.text {
+	@include font($font-text-size, $font-text-height);
+	color: $clText;
+}
+
+.btn {
+	@include font($font-btn-size, $font-btn-height);
+	font-family: $font-family-one;
+	font-weight: $font-weight-one;
+	color: $clBtn;
+	border: 2px solid $clBtn;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+.btn:hover {position: relative;top: -2px}
+.btn:active {position: relative;top: 0}
+
+@media (min-width: $mediaMoibil) {
+	.scale {transition: 1s;}
+	.scale:hover {transform: scale(1.08);}
+}
+
+// .mapboxgl-ctrl-logo {display: none !important;}
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib.mapboxgl-compact {display: none !important;}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background-color: $bgMain; }
+::-webkit-scrollbar-thumb { background-color: $clMain; }
+::-webkit-scrollbar-thumb:hover { background-color: $clNavLinkHover; }

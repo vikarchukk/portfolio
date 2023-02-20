@@ -1,67 +1,13 @@
 body {
-	font-family: $font-family-one;
-	font-weight: $font-weight-one;
-	color: $clMain;
-	background-color: $bgMain;
-
-	overflow-x: hidden;
-
-	&.lock {overflow: hidden}
+  @apply font-mono text-whiteM font-medium bg-blackM;
 }
 
-$mediaTablet: 1200px;
-$mediaMoibil: 660px;
+.box { @apply max-w-[1300px] w-full px-[20px] mx-auto; }
 
-.box {
-	max-width: 1280px;
-	width: 100%;
-	padding: 0 30px;
-	margin: 0 auto;
+.icon ul li svg { @apply w-[75px] max560:w-[60px] }
 
-	@media (max-width: $mediaMoibil) {
-		padding: 0 15px;
-	}
-}
+.soc ul li a { @apply transition-opacity duration-500 hover:opacity-75}
 
-*::selection {
-	background-color: $clMain;
-	color: $bgMain;
-}
+.teBbgW { @apply text-blackM bg-whiteM }
 
-.title {
-	@include font($font-title-size, $font-title-height);
-	color: $clTitle;
-	@media (max-width: $mediaMoibil) {
-		@include font(43px, 57px);
-	}
-}
-
-.text {
-	@include font($font-text-size, $font-text-height);
-	color: $clText;
-}
-
-.btn {
-	@include font($font-btn-size, $font-btn-height);
-	font-family: $font-family-one;
-	font-weight: $font-weight-one;
-	color: $clBtn;
-	border: 2px solid $clBtn;
-	padding: 10px 20px;
-	text-transform: uppercase;
-}
-.btn:hover {position: relative;top: -2px}
-.btn:active {position: relative;top: 0}
-
-@media (min-width: $mediaMoibil) {
-	.scale {transition: 1s;}
-	.scale:hover {transform: scale(1.08);}
-}
-
-// .mapboxgl-ctrl-logo {display: none !important;}
-.mapboxgl-ctrl.mapboxgl-ctrl-attrib.mapboxgl-compact {display: none !important;}
-
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background-color: $bgMain; }
-::-webkit-scrollbar-thumb { background-color: $clMain; }
-::-webkit-scrollbar-thumb:hover { background-color: $clNavLinkHover; }
+.portfolio a { @apply decoration-blue-500 underline decoration-2 underline-offset-4 transition-opacity duration-500 hover:opacity-75}
